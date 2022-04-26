@@ -3,6 +3,35 @@ import './Intro.css'
 import GitHub from '../../../images/github.png'
 import LinkedIn from '../../../images/linkedin.png'
 import Instagram from '../../../images/instagram.png'
+import Amazon from '../../../images/amazon.png'
+import Boy from '../../../images/boy.png'
+import Crown from '../../../images/crown.png'
+import Ecommerce from '../../../images/ecommerce.png'
+import Facebook from '../../../images/Facebook.png'
+import Fiverr from '../../../images/fiverr.png'
+import Glasses from '../../../images/glasses.png'
+import GlassesImoji from '../../../images/glassesimoji.png'
+import Heartemoji from '../../../images/heartemoji.png'
+import Hoc from '../../../images/hoc.png'
+import Humble from '../../../images/humble.png'
+import MusicApp from '../../../images/musicapp.png'
+import Profile1 from '../../../images/profile1.jpg'
+import Profile2 from '../../../images/profile2.jpg'
+import Profile3 from '../../../images/profile3.jpg'
+import Profile4 from '../../../images/profile4.jpg'
+import Profile5 from '../../../images/profile5.jpg'
+import Profile6 from '../../../images/profile6.jpg'
+import PurpleBlur from '../../../images/purpleblur.png'
+import Shopify from '../../../images/Shopify.png'
+import Sidebar from '../../../images/sidebar.png'
+import Thumbup from '../../../images/thumbup.png'
+import Upwork from '../../../images/Upwork.png'
+import Vector1 from '../../../images/Vector1.png'
+import Vector2 from '../../../images/Vector2.png'
+import Wave from '../../../images/wave.png'
+
+import FloatingDiv from "../FloatingDiv/FloatingDiv"
+
 const Intro = () => {
     return(
         <div className="intro">
@@ -33,7 +62,25 @@ const Intro = () => {
                 </div>
             </div>
             {/* Right section  */}
-            <div className="i-right">Helllo Right side</div>
+            <div className="i-right">
+                <img src={Vector1} alt="" />
+                <img src={Vector2} alt="" />
+                <img src={Boy} alt="" />
+                <img src={GlassesImoji} alt="" />
+                <div style={{top:'8.5rem', left:'81%'}}>
+                    <FloatingDiv image={Crown} text1='Web' text2='Developer'/>
+                </div>
+                <div style={{top:'81%',left:'52%'}}>
+                    <FloatingDiv image={Thumbup} text1='Best Design' text2='Award'/>
+                </div>
+                {/* Blur div  */}
+                <div className="blur" style={{background: "rgb(238, 210, 255)"}}></div>
+                <div className="blur" style={{
+                    background: "#C1F5FF",
+                    top: '20rem',
+                    right: '17rem'
+                    }}></div>
+            </div>
         </div>
     )
 }
