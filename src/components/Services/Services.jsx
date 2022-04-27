@@ -3,7 +3,7 @@ import './Services.css'
 import Heartemoji from '../../images/heartemoji.png'
 import Glasses from '../../images/glasses.png'
 import Humble from '../../images/humble.png'
-
+import Card from '../Card/Card'
 const Services = () => {
     return(
         <div className="services">
@@ -15,7 +15,7 @@ const Services = () => {
                     Lorem ipsum dolor sit amet consectetur
                      adipisicing elit. <br/>
                      Dolorum aperiam odit inventore
-                      impedit vel mollitia repellendus eius?
+                      impedit vel mollitia repellendus eius?<br/>
                        Neque, ipsa ipsam
                        consequatur culpa natus<br/>
                         provident quod reprehenderit voluptates, 
@@ -30,7 +30,13 @@ const Services = () => {
             </div>
             {/* Right side */}
             <div className="cards">
-
+                <div style={{left: '14rem'}}>
+                    <Card
+                    emoji = {Heartemoji}
+                    Heading = 'Design '
+                    detail = "Figma, Sketch, Photoshop, Adobe, Adobe xd"
+                    />
+                </div>
             </div>
         </div>
     )
