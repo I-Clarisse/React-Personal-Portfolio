@@ -29,7 +29,7 @@ const Services = () => {
                     </button>
                 </a>
                 {/* blur div  */}
-                <div className="blur s-blur" style={{background: "ABF1FF94"}}></div>
+                <div className="blur s-blur1" style={{background: "ABF1FF94"}}></div>
             </div>
             {/* Right side */}
             <div className="cards">
@@ -55,9 +55,9 @@ const Services = () => {
                      emoji={Humble}
                      Heading = {'UI/UX'}
                      detail = {"Front-end developer using different tools and technologies"}
-
                      />
                  </div>
+                 <div className="blur s-blur-2" style={{background: "var(--purple)"}}></div>
             </div>
         </div>
     )
