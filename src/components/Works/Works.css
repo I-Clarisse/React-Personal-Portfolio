@@ -4,3 +4,16 @@
     height: 90vh;
     margin-top: 4rem;
 }
+.w-right{
+    position: relative;
+}
+.w-mainCircle{
+    left: 9rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: #ffffff;
+}
