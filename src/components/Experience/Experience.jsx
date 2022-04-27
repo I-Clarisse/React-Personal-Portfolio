@@ -12,7 +12,7 @@ const Experience = () => {
             <Circle number ={'20+'} status={'completed'} subject={'Projects'}/>
         </div>
         <div className="achievements">
-            <Circle number ={'5+'} status={''} subject={'Companies'}/>
+            <Circle number ={'5+'} status={'companies'} subject={'work'}/>
         </div>
         </div>
     )
