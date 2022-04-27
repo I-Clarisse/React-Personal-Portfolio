@@ -4,6 +4,7 @@ import Heartemoji from '../../images/heartemoji.png'
 import Glasses from '../../images/glasses.png'
 import Humble from '../../images/humble.png'
 import Card from '../Card/Card'
+import Resume from './Technovation Certificate.pdf'
 const Services = () => {
     return(
         <div className="services">
@@ -22,14 +23,17 @@ const Services = () => {
                         qui assumenda nemo?
                 </span>
                 {/* download button  */}
-                <button className="button s-button">
-                    Download CV
-                </button>
+                <a href={Resume} download>
+                    <button className="button s-button">
+                        Download CV
+                    </button>
+                </a>
                 {/* blur div  */}
                 <div className="blur s-blur" style={{background: "ABF1FF94"}}></div>
             </div>
             {/* Right side */}
             <div className="cards">
+
                 <div style={{left: '14rem'}}>
                     <Card
                     emoji = {Heartemoji}
@@ -37,6 +41,23 @@ const Services = () => {
                     detail = "Figma, Sketch, Photoshop, Adobe, Adobe xd"
                     />
                 </div>
+                 {/* Second card  */}
+                 <div style={{top:"12rem", left: "-4rem"}}>
+                     <Card
+                     emoji={Glasses}
+                     Heading={"Developer"}
+                     detail={"Html, Css, Javascript, React"}
+                     />
+                 </div>
+                 {/* Third card */}
+                 <div style={{top:"19rem", left: "12rem"}}>
+                     <Card
+                     emoji={Humble}
+                     Heading = {'UI/UX'}
+                     detail = {"Front-end developer using different tools and technologies"}
+
+                     />
+                 </div>
             </div>
         </div>
     )
