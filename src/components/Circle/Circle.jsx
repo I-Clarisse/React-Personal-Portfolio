@@ -8,7 +8,7 @@ const Circle = ({number, status, subject}) => {
                 {number}
             </div>
             <span>{status}</span>
-            <span>{subject}</span>
+            <span className="o-circle">{subject}</span>
         </div>
     )
 }

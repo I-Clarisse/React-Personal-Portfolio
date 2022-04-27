@@ -15,7 +15,10 @@
     justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
+/* before means this div does not exist in html and it will appear before the c-circle */
+/* content is empty because the div should not contain anything */
 .c-circle::before{
     border-radius: 100%;
     content: '';
@@ -27,4 +30,7 @@
     position: absolute;
     z-index: -1;
     box-shadow: var(--boxShadow);
+}
+.o-circle{
+    color: var(--orange);
 }
