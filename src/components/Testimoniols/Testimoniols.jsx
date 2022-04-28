@@ -10,7 +10,7 @@ import Profile5 from '../../images/profile5.jpg'
 import Profile6 from '../../images/profile6.jpg'
 
 const Testimoniols = () => {
-    clients = [
+    const clients = [
         {
             img : Profile1,
             review : "Working with Clarisse was a great experience"
@@ -46,9 +46,14 @@ const Testimoniols = () => {
             <div className="blur t-blur2" style={{background: "skyblue"}}></div>
 
             <Swiper>
-                <SwiperSlide>
-                    
-                </SwiperSlide>
+                {clients.map((client, index) => {
+                    return (
+                        <SwiperSlide key={index}>
+                            <img src={client.img} alt="" />
+                            <span>{client.review}</span>
+                        </SwiperSlide>
+                    )
+                })}
             </Swiper>
         </div>
     )
