@@ -8,7 +8,7 @@ const Contact = () => {
                 <div className="awesome">
                     <span>Get in touch</span>
                     <span>Contact me</span>
-                    <div className="blur s-blur1" style={{background: "#ABF1FF94"}}></div>
+                    <div className="blur c-blur1" style={{background: "#ABF1FF94"}}></div>
                 </div>
             </div>
             <div className="c-right">
