@@ -10,7 +10,7 @@ import PurpleBlur from '../../images/purpleblur.png'
 import Thumbup from '../../images/thumbup.png'
 import Vector1 from '../../images/Vector1.png'
 import Vector2 from '../../images/Vector2.png'
-import Wave from '../../images/wave.png'
+
 
 import FloatingDiv from "../FloatingDiv/FloatingDiv"
 
