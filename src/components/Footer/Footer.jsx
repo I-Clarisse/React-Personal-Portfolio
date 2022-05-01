@@ -2,6 +2,8 @@ import React from "react";
 import './Footer.css'
 import Wave from '../../images/wave.png'
 // import UilReact from '@iconscout/react-unicons/icons/uil-react'
+import GH from '@iconscout/react-unicons/icons/uil-github'
+import FB from '@iconscout/react-unicons/icons/uil-facebook'
 import IG from '@iconscout/react-unicons/icons/uil-instagram'
 
 const Footer = () => {
@@ -11,7 +13,9 @@ const Footer = () => {
             <div className="f-content">
                 <span>clarisse2526@gmail.com</span>
                 <div className="f-icons">
-                    <IG/>
+                    <IG color="#fff" size='3rem'/>
+                    <FB color="#fff" size='3rem'/>
+                    <GH color="#fff" size='3rem'/>
                 </div>
             </div>
         </div>
