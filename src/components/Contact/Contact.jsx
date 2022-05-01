@@ -5,8 +5,6 @@ import emailjs from '@emailjs/browser'
 const Contact = () => {
     const form = useRef();
 
-    // const [done, setDone] = useState(false)
-
     const sendEmail = (e) => {
         e.preventDefault();
         
@@ -32,8 +30,7 @@ const Contact = () => {
                     <input type="email" name="user_email" className="user" placeholder="Email"/>
                     <textarea name="message" className="user" placeholder="Message"/>
                     <input type="submit" value="Send" className="button"/>
-                    {/* <span>{done && "Thanks for contacting me "}</span> */}
-                    <div className="blur c-blur1" style={{background: "var(--purple)"}}></div>
+                    <div className="blur c-blxur1" style={{background: "var(--purple)"}}></div>
                 </form>
             </div>
         </div>
