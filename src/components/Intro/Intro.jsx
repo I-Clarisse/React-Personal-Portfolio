@@ -10,17 +10,19 @@ import PurpleBlur from '../../images/purpleblur.png'
 import Thumbup from '../../images/thumbup.png'
 import Vector1 from '../../images/Vector1.png'
 import Vector2 from '../../images/Vector2.png'
-
-
 import FloatingDiv from "../FloatingDiv/FloatingDiv"
+import { themeContext } from "../../Context"
+import { useContext } from "react"
 
 const Intro = () => {
+    const theme = useContext(themeContext)
+    const darkMode = theme.state.darkMode
     return(
         <div className="intro">
             {/* Left section  */}
             <div className="i-left">
                 <div className="i-name">
-                    <span>Hy! I AM </span>
+                    <span style={{color: darkMode? 'white' : ''}}>Hy! I AM </span>
                     <span>Clarisse </span>
                     <span>
                         Full-stack Developer and AI Enthusiast
