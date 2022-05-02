@@ -16,6 +16,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: #000;
 }
 /* before means this div does not exist in html and it will appear before the c-circle */
 /* content is empty because the div should not contain anything */
