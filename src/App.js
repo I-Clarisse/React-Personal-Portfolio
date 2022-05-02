@@ -9,6 +9,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import './App.css';
 import {themeContext} from './Context'
+import {useContext} from 'react'
 
 function App() {
   const theme = useContext(themeContext)
@@ -17,7 +18,7 @@ function App() {
     
     <div className="App"
     style={{
-      background : darkMode? 'black' : '',
+      background : darkMode? 'rgb( 0, 0, 30)' : '',
       color : darkMode? 'white' : ''
     }}
     >
