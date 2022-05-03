@@ -2,6 +2,7 @@
     height: 10vh;
     display: flex;
     justify-content: space-between ;
+    /* position: fixed; */
 }
 .n-left{
     flex: 1;
@@ -28,7 +29,6 @@
     gap: 2rem;
     margin-right: 4rem;
     list-style-type: none;
-    cursor: pointer;
 }
 .n-list>ul>li:hover{
     cursor: pointer;
@@ -36,4 +36,14 @@
 }
 .n-button{
     flex: 2;
+}
+
+@media  screen and (max-width: 480px) {
+    .n-list {
+        display: none;
+    }
+    .n-button{
+        display: none;
+    }
+    
 }
