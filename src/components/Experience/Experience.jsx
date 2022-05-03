@@ -4,7 +4,7 @@ import Circle from "../Circle/Circle"
 
 const Experience = () => {
     return(
-        <div className="experience">
+        <div className="experience" id="Experience">
         <div className="achievements">
             <Circle number ={'8+'} status={'years'} subject={'Experience'}/>
         </div>

@@ -39,7 +39,7 @@ const Testimoniols = () => {
         },
     ]
     return(
-        <div className="testimoniols">
+        <div className="testimoniols" id="Testimonials">
             {/* Heading  */}
             <div className="t-heading">
                 <span>Clients always get</span>
