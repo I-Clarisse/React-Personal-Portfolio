@@ -8,6 +8,7 @@ import Shopify from '../../images/Shopify.png'
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion"
+import * as Scroll from 'react-scroll'
 
 const Works = () => {
     const transition = {duration: 2, type: 'spring'}
