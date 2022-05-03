@@ -83,16 +83,31 @@
     .intro{
         flex-direction: column;
         height: 64rem;
-        gap: 7rem;
+        gap: 0rem;
     }
     .i-right{
         transform: scale(0.8);
-        left: -3rem;
     }
     .i-right .blur{
         display: none;
+
     }
-     .floating-div:nth-of-type(1){
-         top: -7rem !important;
+     .floating-div{
+         top: 27rem !important;
+         margin-left: -3rem;
+     }
+     .i-right>*{
+         left: 3rem !important;
+     }
+     .glassemoji{
+         margin-left: -9rem !important;
+         top: -8rem;
+     }
+     #vector1{
+         margin-left: -12rem;
+     }
+     
+     #vector2{
+         margin-left: -12rem;
      }
 }

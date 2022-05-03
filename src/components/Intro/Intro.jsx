@@ -49,14 +49,14 @@ const Intro = () => {
             </div>
             {/* Right section  */}
             <div className="i-right">
-                <img src={Vector1} alt="" />
-                <img src={Vector2} alt="" />
+                <img src={Vector1} alt="" id="vector1"/>
+                <img src={Vector2} alt="" id="vector2" />
                 <img src={Boy} alt="" />
                 <motion.img 
                 initial = {{left: "36%"}}
                 whileInView = {{left: "42%"}}
                 transition = {transition}
-                src={GlassesImoji} alt="" />
+                src={GlassesImoji} alt="" className="glassemoji"/>
                 <motion.div 
                 initial = {{top: "24%", left: "86%"}}
                 whileInView = {{left: "81%"}}
