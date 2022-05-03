@@ -13,8 +13,10 @@ import Vector2 from '../../images/Vector2.png'
 import FloatingDiv from "../FloatingDiv/FloatingDiv"
 import { themeContext } from "../../Context"
 import { useContext } from "react"
+import { motion } from "framer-motion"
 
 const Intro = () => {
+    const transition = {duration: 2, type: 'spring'}
     const theme = useContext(themeContext)
     const darkMode = theme.state.darkMode
     return(
@@ -50,13 +52,25 @@ const Intro = () => {
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
                 <img src={Boy} alt="" />
-                <img src={GlassesImoji} alt="" />
-                <div style={{top:'8.5rem', left:'81%'}}>
+                <motion.img 
+                initial = {{left: "36%"}}
+                whileInView = {{left: "42%"}}
+                transition = {transition}
+                src={GlassesImoji} alt="" />
+                <motion.div 
+                initial = {{top: "24%", left: "86%"}}
+                whileInView = {{left: "81%"}}
+                transition = {transition}
+                style={{top:'8.5rem', left:'81%'}}>
                     <FloatingDiv image={Crown} text1='Web' text2='Developer'/>
-                </div>
-                <div style={{top:'81%',left:'52%'}}>
+                </motion.div>
+                <motion.div
+                initial = {{ left: "47%"}}
+                whileInView = {{left: "52%"}}
+                transition = {transition}
+                style={{top:'81%',left:'52%'}}>
                     <FloatingDiv image={Thumbup} text1='Best Design' text2='Award'/>
-                </div>
+                </motion.div>
                 {/* Blur div  */}
                 <div className="blur" style={{background: "rgb(238, 210, 255)"}}></div>
                 <div className="blur" style={{

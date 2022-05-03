@@ -7,7 +7,10 @@ import Card from '../Card/Card'
 import Resume from './Technovation Certificate.pdf'
 import { themeContext } from "../../Context"
 import { useContext } from "react"
+import { motion } from "framer-motion"
+
 const Services = () => {
+    const transition = {duration: 2, type: 'spring'}
     const theme = useContext(themeContext)
     const darkMode = theme.state.darkMode
     return(
@@ -37,30 +40,42 @@ const Services = () => {
             </div>
             {/* Right side */}
             <div className="cards">
-
-                <div style={{left: '14rem'}}>
+                {/* First card */}
+                <motion.div
+                initial = {{left: "19rem"}}
+                whileInView = {{left: "14rem"}}
+                transition = {transition}
+                style={{left: '14rem'}}>
                     <Card
                     emoji = {Heartemoji}
                     Heading = 'Design '
                     detail = "Figma, Sketch, Photoshop, Adobe, Adobe xd"
                     />
-                </div>
+                </motion.div>
                  {/* Second card  */}
-                 <div style={{top:"12rem", left: "-4rem"}}>
+                 <motion.div 
+                 initial = {{left: "-9rem"}}
+                 whileInView = {{left: "-4rem"}}
+                 transition = {transition}
+                 style={{top:"12rem", left: "-4rem"}}>
                      <Card
                      emoji={Glasses}
                      Heading={"Developer"}
                      detail={"Html, Css, Javascript, React"}
                      />
-                 </div>
+                 </motion.div>
                  {/* Third card */}
-                 <div style={{top:"19rem", left: "12rem"}}>
+                 <motion.div 
+                 initial = {{left: "17rem"}}
+                 whileInView = {{left: "12rem"}}
+                 transition = {transition}
+                 style={{top:"19rem", left: "12rem"}}>
                      <Card
                      emoji={Humble}
                      Heading = {'UI/UX'}
                      detail = {"Front-end developer using different tools and technologies"}
                      />
-                 </div>
+                 </motion.div>
                  <div className="blur s-blur-2" style={{background: "var(--purple)"}}></div>
             </div>
         </div>
