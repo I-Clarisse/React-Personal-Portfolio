@@ -59,3 +59,13 @@
 .testimoniols .swiper-pagination-bullet-active{
     background: var(--orange);
 }
+
+@media screen and (max-width: 480px) {
+    .testimoniols{
+        padding: 0;
+    }
+    .testimonial>img{
+        width: 70px;
+        height: 70px;
+    }
+}
