@@ -61,7 +61,7 @@ const Works = () => {
                         <img src={Facebook} alt="facebook" />
                     </div>
                 </motion.div>
-                {/* background circles  */}
+                {/*  the background circles  */}
                 <div className="w-backCircle blueCircle"></div>
                 <div className="w-backCircle yellowCircle"></div>
             </div>
